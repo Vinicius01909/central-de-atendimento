@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Novo Chamado</title>
+    <link rel="stylesheet" href="styles_novo_chamado.css">
+</head>
+<body>
+    <div class="chamado-container">
+        <h1>Abrir Novo Chamado</h1>
+        <p>Preencha as informações abaixo para registrar um novo chamado.</p>
+        <form action="ver_chamados.html" method="POST">
+            <label for="titulo">Título do Problema</label>
+            <input type="text" id="titulo" name="titulo" required placeholder="Exemplo: Sistema não responde">
+
+            <label for="descricao">Descrição</label>
+            <textarea id="descricao" name="descricao" required placeholder="Descreva o problema detalhadamente"></textarea>
+
+            <button type="submit" class="button">Enviar Chamado</button>
+        </form>
+        <a href="central.html" class="button-back">Voltar ao Dashboard</a>
+    </div>
+</body>
+</html>
